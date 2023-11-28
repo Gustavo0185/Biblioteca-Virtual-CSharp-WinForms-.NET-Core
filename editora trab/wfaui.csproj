@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B32866C-82F7-41A2-B18B-4865F5DCA0B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>editora_trab</RootNamespace>
+    <AssemblyName>editora trab</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCadastroAutLiv-Pesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAutLiv-Pesquisar.Designer.cs">
+      <DependentUpon>frmCadastroAutLiv-Pesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroAutLiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAutLiv.Designer.cs">
+      <DependentUpon>frmCadastroAutLiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroAutores-Pesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAutores-Pesquisar.Designer.cs">
+      <DependentUpon>frmCadastroAutores-Pesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroEeditoras-Pesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroEeditoras-Pesquisar.Designer.cs">
+      <DependentUpon>frmCadastroEeditoras-Pesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroLivros-Pesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroLivros-Pesquisar.Designer.cs">
+      <DependentUpon>frmCadastroLivros-Pesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginCadastro.Designer.cs">
+      <DependentUpon>frmLoginCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAutores.Designer.cs">
+      <DependentUpon>frmCadastroAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroLivros.Designer.cs">
+      <DependentUpon>frmCadastroLivros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmCadastroEditoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroEditoras.Designer.cs">
+      <DependentUpon>frmCadastroEditoras.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCadastroAutLiv-Pesquisar.resx">
+      <DependentUpon>frmCadastroAutLiv-Pesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroAutLiv.resx">
+      <DependentUpon>frmCadastroAutLiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroAutores-Pesquisar.resx">
+      <DependentUpon>frmCadastroAutores-Pesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroEeditoras-Pesquisar.resx">
+      <DependentUpon>frmCadastroEeditoras-Pesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroLivros-Pesquisar.resx">
+      <DependentUpon>frmCadastroLivros-Pesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginCadastro.resx">
+      <DependentUpon>frmLoginCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroAutores.resx">
+      <DependentUpon>frmCadastroAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroEditoras.resx">
+      <DependentUpon>frmCadastroEditoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroLivros.resx">
+      <DependentUpon>frmCadastroLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cldal\cldal.csproj">
+      <Project>{c7a62cf6-daec-414a-aa03-147978ade740}</Project>
+      <Name>cldal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\clmodel\clmodel.csproj">
+      <Project>{1a7f3634-af26-4ba6-a31f-a0600b30e047}</Project>
+      <Name>clmodel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
